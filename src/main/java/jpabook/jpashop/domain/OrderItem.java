@@ -8,11 +8,11 @@ import javax.persistence.Id;
 @Entity
 public class OrderItem {
     @Id @GeneratedValue
-    @Column("ORDER_ITEM_ID")
+    @Column(name = "ORDER_ITEM_ID")
     private Long Id;
-    @Column("ORDER_ID")
+    @Column(name = "ORDER_ID")
     private Long orderId;
-    @Column("ITEM_ID")
+    @Column(name = "ITEM_ID")
     private Long itemId;
 
     private int orderPrice;

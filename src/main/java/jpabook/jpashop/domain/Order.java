@@ -7,10 +7,11 @@ import java.time.LocalDateTime;
 @Table(name="ORDERS")
 public class Order {
     @Id @GeneratedValue
-    @Column("ORDER_ID")
+    @Column(name = "ORDER_ID")
     private Long id;
-    @Column("MEMBER_ID")
+    @Column(name = "MEMBER_ID")
     private String memberId;
+
     private LocalDateTime orderDate;
     @Enumerated(EnumType.STRING)
     private OrderStatus status;

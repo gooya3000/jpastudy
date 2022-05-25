@@ -8,7 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class Member {
     @Id @GeneratedValue
-    @Column("MEMBER_ID")
+    @Column(name = "MEMBER_ID")
     private Long id;
     private String name;
     private String city;
