@@ -18,7 +18,7 @@ public class JpaMain {
 
         try {
 
-
+            //github test
             tx.commit();
         } catch (Exception e){
             tx.rollback();
