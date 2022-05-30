@@ -15,8 +15,8 @@ public class OrderItem {
     /*@Column(name = "ITEM_ID")
     private Long itemId;*/
     @ManyToOne
-    @JoinColumn(name="ORDER_ID")
-    private OrderItem ITEM_ID;
+    @JoinColumn(name="ITEM_ID")
+    private Item item;
 
     private int orderPrice;
     private int count;
@@ -69,11 +69,11 @@ public class OrderItem {
         this.order = order;
     }
 
-    public OrderItem getITEM_ID() {
-        return ITEM_ID;
+    public Item getItem() {
+        return item;
     }
 
-    public void setITEM_ID(OrderItem ITEM_ID) {
-        this.ITEM_ID = ITEM_ID;
+    public void setItem(Item item) {
+        this.item = item;
     }
 }
